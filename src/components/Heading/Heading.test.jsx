@@ -84,4 +84,27 @@ describe('<Heading />', () => {
 
     expect(h6.tagName.toLowerCase()).toBe('h6');
   });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Heading>Texto</Heading>);
+    expect(container.firstChild).toMatchInlineSnapshot(`
+      .c0 {
+        color: #0A1128;
+        font-size: 6.4rem;
+        text-transform: none;
+      }
+
+      @media (max-width:768px) {
+        .c0 {
+          font-size: 4.0rem;
+        }
+      }
+
+      <h1
+        class="c0"
+      >
+        Texto
+      </h1>
+    `);
+  });
 });
