@@ -1,10 +1,11 @@
 import React from 'react';
+import Heading from '../../components/Heading/index.jsx';
 import './styles.js';
 import { Wrapper } from './styles.js';
 
 const Home = () => (
   <Wrapper>
-    <h1>Hello JS!</h1>
+    <Heading size="huge">Hello JS!</Heading>
   </Wrapper>
 );
 
