@@ -1,7 +1,6 @@
 import { renderTheme } from '../../styles/RenderTheme';
 import GridTwoColumns from '.';
 import { screen } from '@testing-library/react';
-import { theme } from '../../styles/theme';
 import mock from '../../mocks/GridTwoColumns';
 
 describe('<GridTwoColumns />', () => {
