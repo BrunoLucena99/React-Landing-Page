@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 const NavLinks = ({ links = [] }) => {
   return (
-    <Container>
+    <Container aria-label="Main menu">
       {links.map((link) => (
         <MenuLink key={link.href} {...link} />
       ))}
