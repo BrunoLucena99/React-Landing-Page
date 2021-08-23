@@ -7,14 +7,14 @@ import TextComponent from '../TextComponent';
 const GridText = ({ title, description, grid, hasBackground }) => (
   <SectionBackground hasBackground={hasBackground}>
     <Container>
-      <Heading colorDark={!hasBackground} size="huge" uppercase>
+      <Heading as="h2" colorDark={!hasBackground} size="huge" uppercase>
         {title}
       </Heading>
       <TextComponent>{description}</TextComponent>
       <Grid>
         {grid.map((element, index) => (
           <GridElement key={element.title + index}>
-            <Heading colorDark={!hasBackground} size="medium">
+            <Heading as="h3" colorDark={!hasBackground} size="medium">
               {title}
             </Heading>
             <TextComponent>{description}</TextComponent>

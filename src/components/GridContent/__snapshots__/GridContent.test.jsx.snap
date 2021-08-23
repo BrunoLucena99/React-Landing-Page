@@ -34,7 +34,7 @@ exports[`<GridContent /> should render correctly 1`] = `
 .c3 {
   color: #0A1128;
   font-size: 6.4rem;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 .c5 {
@@ -56,11 +56,11 @@ exports[`<GridContent /> should render correctly 1`] = `
     <div
       class="c2"
     >
-      <h1
+      <h2
         class="c3"
       >
         Título que eu quero
-      </h1>
+      </h2>
       <div
         class="c4"
       >

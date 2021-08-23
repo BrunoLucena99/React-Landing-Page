@@ -85,11 +85,11 @@ exports[`<GridTwoColumns /> should correctly when background is setted 1`] = `
       <div
         class="c3"
       >
-        <h1
+        <h2
           class="c4"
         >
           Grid two columns title
-        </h1>
+        </h2>
         <p
           class="c5"
         >
@@ -196,11 +196,11 @@ exports[`<GridTwoColumns /> should render correctly with default values 1`] = `
       <div
         class="c3"
       >
-        <h1
+        <h2
           class="c4"
         >
           Grid two columns title
-        </h1>
+        </h2>
         <p
           class="c5"
         >

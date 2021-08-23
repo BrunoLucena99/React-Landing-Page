@@ -77,11 +77,11 @@ exports[`<GridText /> should render correctly 1`] = `
     <div
       class=""
     >
-      <h1
+      <h2
         class="c2 c3"
       >
         My grid
-      </h1>
+      </h2>
       <p
         class="c4"
       >
@@ -93,11 +93,11 @@ exports[`<GridText /> should render correctly 1`] = `
         <div
           class="c6"
         >
-          <h1
+          <h3
             class="c2 c7"
           >
             My grid
-          </h1>
+          </h3>
           <p
             class="c4"
           >
@@ -107,11 +107,11 @@ exports[`<GridText /> should render correctly 1`] = `
         <div
           class="c6"
         >
-          <h1
+          <h3
             class="c2 c7"
           >
             My grid
-          </h1>
+          </h3>
           <p
             class="c4"
           >
@@ -121,11 +121,11 @@ exports[`<GridText /> should render correctly 1`] = `
         <div
           class="c6"
         >
-          <h1
+          <h3
             class="c2 c7"
           >
             My grid
-          </h1>
+          </h3>
           <p
             class="c4"
           >

@@ -8,7 +8,9 @@ const GridContent = ({ title, html, hasBackground = false }) => {
   return (
     <SectionBackground hasBackground={hasBackground}>
       <Container>
-        <Heading colorDark={!hasBackground}>{title}</Heading>
+        <Heading uppercase as="h2" colorDark={!hasBackground}>
+          {title}
+        </Heading>
         <HTMLContainer>
           <TextComponent>{html}</TextComponent>
         </HTMLContainer>
