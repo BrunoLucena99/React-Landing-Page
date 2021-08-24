@@ -3,10 +3,9 @@ import Heading from '../../components/Heading/index.jsx';
 import BaseTemplate from '../Base/index.jsx';
 
 // temporary import to facilitate testing on react server
-import { mockBase } from '../Base/stories.jsx';
+import mock, { childrenMock } from '../../mocks/BaseTemplate';
 import './styles.js';
-import { Wrapper } from './styles.js';
 
-const Home = () => <BaseTemplate {...mockBase} />;
+const Home = () => <BaseTemplate {...mock} {...childrenMock} />;
 
 export default Home;

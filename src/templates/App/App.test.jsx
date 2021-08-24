@@ -5,6 +5,7 @@ import { theme } from '../../styles/theme';
 
 describe('<Home />', () => {
   it('should render Home', () => {
-    renderTheme(<Home />);
+    const { container } = renderTheme(<Home />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

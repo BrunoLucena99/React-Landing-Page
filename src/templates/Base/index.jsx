@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import GoTop from '../../components/GoTop';
 
 const BaseTemplate = ({ children, logoData, links = [], footerHtml }) => {
-  console.log(footerHtml);
   return (
     <>
       <Menu links={links} logoData={logoData} />

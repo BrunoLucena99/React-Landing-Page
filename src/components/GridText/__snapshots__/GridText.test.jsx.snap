@@ -68,6 +68,12 @@ exports[`<GridText /> should render correctly 1`] = `
   }
 }
 
+@media (max-width:768px) {
+  .c5 {
+    grid-template-columns: 1fr;
+  }
+}
+
 <div
   class="c0"
 >
