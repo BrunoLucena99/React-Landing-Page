@@ -96,12 +96,12 @@ exports[`<GridText /> should render correctly 1`] = `
           <h3
             class="c2 c7"
           >
-            My grid
+            Teste 1
           </h3>
           <p
             class="c4"
           >
-            Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
           </p>
         </div>
         <div
@@ -110,12 +110,12 @@ exports[`<GridText /> should render correctly 1`] = `
           <h3
             class="c2 c7"
           >
-            My grid
+            Teste 2
           </h3>
           <p
             class="c4"
           >
-            Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
           </p>
         </div>
         <div
@@ -124,12 +124,12 @@ exports[`<GridText /> should render correctly 1`] = `
           <h3
             class="c2 c7"
           >
-            My grid
+            Teste 3
           </h3>
           <p
             class="c4"
           >
-            Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
           </p>
         </div>
       </div>
