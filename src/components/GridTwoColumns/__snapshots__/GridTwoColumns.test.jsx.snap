@@ -90,7 +90,7 @@ exports[`<GridTwoColumns /> should correctly when background is setted 1`] = `
         >
           Grid two columns title
         </h2>
-        <p
+        <div
           class="c5"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -98,7 +98,7 @@ exports[`<GridTwoColumns /> should correctly when background is setted 1`] = `
     Quo minus odio cum vel, ipsum cumque omnis.
     Obcaecati commodi repellendus fugiat quos est.
     A, similique saepe?
-        </p>
+        </div>
       </div>
       <div
         class=""
@@ -201,7 +201,7 @@ exports[`<GridTwoColumns /> should render correctly with default values 1`] = `
         >
           Grid two columns title
         </h2>
-        <p
+        <div
           class="c5"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -209,7 +209,7 @@ exports[`<GridTwoColumns /> should render correctly with default values 1`] = `
     Quo minus odio cum vel, ipsum cumque omnis.
     Obcaecati commodi repellendus fugiat quos est.
     A, similique saepe?
-        </p>
+        </div>
       </div>
       <div
         class=""
