@@ -27,6 +27,7 @@ const mobileContainer = (theme, visible) => css`
 const menuVisible = () => css`
   visibility: visible;
   opacity: 1;
+  bottom: 0;
 `;
 
 export const Container = styled.div`
@@ -35,7 +36,6 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   border-bottom: ${({ theme }) => theme.colors.mediumGray};
   background: ${({ theme }) => theme.colors.white};
   transition: all 300ms ease-in-out;
