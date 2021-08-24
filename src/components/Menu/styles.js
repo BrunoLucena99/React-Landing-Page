@@ -4,7 +4,6 @@ import { Title as Heading } from '../Heading/styles';
 
 const mobileContainer = (theme, visible) => css`
   @media ${theme.media.lteMedium} {
-    height: 100vh;
     visibility: hidden;
     opacity: 0;
     ${visible && menuVisible()}
@@ -36,6 +35,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   border-bottom: ${({ theme }) => theme.colors.mediumGray};
   background: ${({ theme }) => theme.colors.white};
   transition: all 300ms ease-in-out;
