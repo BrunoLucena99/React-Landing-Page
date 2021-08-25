@@ -2,8 +2,10 @@ import P from 'prop-types';
 import SectionContainer from '../SectionContainer';
 import { Container } from './styles';
 
-const SectionBackground = ({ children, ...props }) => (
-  <Container {...props}>
+import { randomSectionId } from '../../utils/functions';
+
+const SectionBackground = ({ children, sectionId = '', ...props }) => (
+  <Container id={sectionId || randomSectionId()} {...props}>
     <SectionContainer>{children}</SectionContainer>
   </Container>
 );
@@ -11,6 +13,7 @@ const SectionBackground = ({ children, ...props }) => (
 SectionBackground.propTypes = {
   children: P.node.isRequired,
   hasBackground: P.bool,
+  sectionId: P.string,
 };
 
 export default SectionBackground;

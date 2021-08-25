@@ -4,8 +4,14 @@ import SectionBackground from '../SectionBackground';
 import Heading from '../Heading';
 import TextComponent from '../TextComponent';
 
-const GridText = ({ title, description, grid, hasBackground }) => (
-  <SectionBackground hasBackground={hasBackground}>
+const GridText = ({
+  title,
+  description,
+  grid,
+  hasBackground,
+  sectionId = '',
+}) => (
+  <SectionBackground sectionId={sectionId} hasBackground={hasBackground}>
     <Container>
       <Heading as="h2" colorDark={!hasBackground} size="huge" uppercase>
         {title}
@@ -35,6 +41,7 @@ GridText.propTypes = {
       description: P.string.isRequired,
     }),
   ).isRequired,
+  sectionId: P.string,
 };
 
 export default GridText;

@@ -4,8 +4,14 @@ import SectionBackground from '../SectionBackground';
 import Heading from '../Heading';
 import TextComponent from '../TextComponent';
 
-const GridImage = ({ title, description, hasBackground = false, grid }) => (
-  <SectionBackground hasBackground={hasBackground}>
+const GridImage = ({
+  title,
+  description,
+  hasBackground = false,
+  grid,
+  sectionId = '',
+}) => (
+  <SectionBackground sectionId={sectionId} hasBackground={hasBackground}>
     <Container>
       <Heading as="h2" colorDark={!hasBackground} size="huge" uppercase>
         {title}
@@ -32,6 +38,7 @@ GridImage.propTypes = {
       srcImg: P.string.isRequired,
     }),
   ),
+  sectionId: P.string,
 };
 
 export default GridImage;
