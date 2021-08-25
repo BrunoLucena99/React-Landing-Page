@@ -1,12 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GridImage /> should render correctly 1`] = `
-.c2 {
-  color: #0A1128;
-  font-size: 6.4rem;
-  text-transform: uppercase;
-}
-
 .c4 {
   display: grid;
   gap: 3.2rem;
@@ -51,8 +45,20 @@ exports[`<GridImage /> should render correctly 1`] = `
   align-items: center;
 }
 
+.c2 {
+  color: #0A1128;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
 .c3 {
   font-size: 2.4rem;
+}
+
+@media (max-width:768px) {
+  .c4 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width:768px) {
@@ -63,6 +69,7 @@ exports[`<GridImage /> should render correctly 1`] = `
 
 <div
   class="c0"
+  id="id-8045-049922673899"
 >
   <div
     class="c1"
