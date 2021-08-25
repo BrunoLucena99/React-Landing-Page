@@ -76,7 +76,7 @@ exports[`<GridTwoColumns /> should correctly when background is setted 1`] = `
 
 <div
   class="c0"
-  id="id-1123-6453150792402"
+  id=""
 >
   <div
     class="c1"
@@ -189,7 +189,7 @@ exports[`<GridTwoColumns /> should render correctly with default values 1`] = `
 
 <div
   class="c0"
-  id="id-5892-709637534974"
+  id=""
 >
   <div
     class="c1"

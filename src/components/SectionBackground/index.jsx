@@ -2,10 +2,8 @@ import P from 'prop-types';
 import SectionContainer from '../SectionContainer';
 import { Container } from './styles';
 
-import { randomSectionId } from '../../utils/functions';
-
 const SectionBackground = ({ children, sectionId = '', ...props }) => (
-  <Container id={sectionId || randomSectionId()} {...props}>
+  <Container id={sectionId} {...props}>
     <SectionContainer>{children}</SectionContainer>
   </Container>
 );
