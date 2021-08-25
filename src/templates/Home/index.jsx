@@ -1,10 +1,10 @@
 import './styles.js';
 import React, { useCallback, useEffect, useState } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 
 import BaseTemplate from '../Base';
-import PageNotFound from '../PageNotFound';
-import Loading from '../Loading';
 
+import Loading from '../../components/Loading';
 import GridTwoColumns from '../../components/GridTwoColumns';
 import mapData from '../../utils/mapData';
 import GridContent from '../../components/GridContent';
@@ -13,25 +13,29 @@ import GridImage from '../../components/GridImage';
 
 const Home = () => {
   const [data, setData] = useState([]);
+  const history = useHistory();
+  const location = useLocation();
 
   const loadData = useCallback(async () => {
     try {
-      const data = await fetch('http://localhost:1337/pages?slug=landing-page');
+      const slug =
+        location.pathname.replace(/[^a-z0-9-_]/gi, '') || 'landing-page';
+      const data = await fetch(`http://localhost:1337/pages?slug=${slug}`);
       const json = await data.json();
       const pageData = mapData(json);
+      if (!pageData[0]) {
+        history.push('/404');
+        return;
+      }
       setData(pageData[0]);
     } catch {
-      setData(null);
+      history.push('/404');
     }
-  }, []);
+  }, [location, history]);
 
   useEffect(() => {
     loadData();
   }, [loadData]);
-
-  if (!data) {
-    return <PageNotFound />;
-  }
 
   if (data && !data.slug) {
     return <Loading />;
