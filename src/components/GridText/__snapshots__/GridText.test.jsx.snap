@@ -42,6 +42,7 @@ exports[`<GridText /> should render correctly 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {

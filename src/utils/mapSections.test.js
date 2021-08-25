@@ -120,7 +120,7 @@ describe('mapImageGrid', () => {
     const mock = imageGridMock;
     const data = mapImageGrid(mock);
     const expectedGrid = mock.image_grid.map((img) => ({
-      srcImg: img.image.src ?? '',
+      srcImg: img.image.url ?? '',
       altText: img.image.alternativeText ?? '',
     }));
 

@@ -26,6 +26,7 @@ exports[`<GridTwoColumns /> should correctly when background is setted 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -139,6 +140,7 @@ exports[`<GridTwoColumns /> should render correctly with default values 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {

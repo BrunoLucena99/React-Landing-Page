@@ -4,7 +4,7 @@ const mock = {
   open_in_new_tab: false,
   logo_text: 'Landing Page',
   logo_link: '#home',
-  menu: [
+  menu_link: [
     {
       open_in_new_tab: false,
       link_text: 'pricing',
@@ -39,8 +39,8 @@ describe('MapMenu', () => {
     expect(menu.text).toBe(mock.logo_text);
     expect(menu.image).toBe(mock.logo.url);
     expect(menu.link).toBe(mock.logo_link);
-    expect(menu.links[0].newTab).toBe(mock.menu[0].open_in_new_tab);
-    expect(menu.links[0].href).toBe(mock.menu[0].url);
-    expect(menu.links[0].children).toBe(mock.menu[0].link_text);
+    expect(menu.links[0].newTab).toBe(mock.menu_link[0].open_in_new_tab);
+    expect(menu.links[0].href).toBe(mock.menu_link[0].url);
+    expect(menu.links[0].children).toBe(mock.menu_link[0].link_text);
   });
 });

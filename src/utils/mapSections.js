@@ -32,7 +32,7 @@ export const mapImageGrid = (section = {}) => ({
   sectionId: section.metadata?.section_id ?? '',
   grid: section.image_grid
     ? section.image_grid.map((img) => ({
-        srcImg: img.image.src ?? '',
+        srcImg: img.image.url ?? '',
         altText: img.image.alternativeText,
       }))
     : [],

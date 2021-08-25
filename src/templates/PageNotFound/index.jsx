@@ -1,4 +1,3 @@
-import { Container } from './styles';
 import GridContent from '../../components/GridContent';
 
 const PageNotFound = () => (

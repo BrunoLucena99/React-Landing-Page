@@ -119,7 +119,7 @@ export const imageGrid = {
         size: 29.09,
         width: 360,
         height: 360,
-        url: 'a.svg',
+        url: undefined,
         provider_metadata: {
           public_id: '360x360_r_1_6a2049d13a',
           resource_type: 'image',
