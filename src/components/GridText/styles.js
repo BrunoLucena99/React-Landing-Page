@@ -20,7 +20,7 @@ export const Grid = styled.div`
 export const GridElement = styled.div`
   ${HeadingTitle} {
     position: relative;
-    left: 5rem;
+    margin-left: 5rem;
   }
 
   ${HeadingTitle}::before {
