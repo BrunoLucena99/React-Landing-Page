@@ -47,7 +47,7 @@ const mapSections = (sections = []) =>
     }
 
     if (sectionType === 'section-content') {
-      return mapSectionContent();
+      return mapSectionContent(section);
     }
 
     if (sectionType === 'section-grid') {
