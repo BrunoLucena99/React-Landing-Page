@@ -6,6 +6,7 @@ import mock, { childrenMock } from '../../mocks/BaseTemplate';
 
 import mapData from '../../utils/mapData';
 import './styles.js';
+import PageNotFound from '../PageNotFound/index.jsx';
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -17,7 +18,6 @@ const Home = () => {
       const pageData = mapData(json);
       setData(pageData[0]);
     } catch {
-      console.log('Erro');
       setData(null);
     }
   }, []);
@@ -27,7 +27,7 @@ const Home = () => {
   }, [loadData]);
 
   if (!data) {
-    return <h1>Página não encontrada</h1>;
+    return <PageNotFound />;
   }
 
   if (data && !data.slug) {
