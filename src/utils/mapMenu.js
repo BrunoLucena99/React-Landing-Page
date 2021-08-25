@@ -1,6 +1,6 @@
 const mapMenuLinks = (links) => {
   return links.map((item) => ({
-    newTab: item.open_in_new_tab ?? false,
+    newTab: item.new_tab ?? false,
     href: item.url ?? '',
     children: item.link_text ?? '',
   }));
