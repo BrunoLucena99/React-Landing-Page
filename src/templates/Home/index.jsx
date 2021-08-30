@@ -1,4 +1,6 @@
 import './styles.js';
+import config from '../../config/index.js';
+
 import React, { useCallback, useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
@@ -19,8 +21,8 @@ const Home = () => {
   const loadData = useCallback(async () => {
     try {
       const slug =
-        location.pathname.replace(/[^a-z0-9-_]/gi, '') || 'landing-page';
-      const data = await fetch(`http://localhost:1337/pages?slug=${slug}`);
+        location.pathname.replace(/[^a-z0-9-_]/gi, '') || config.defaultSlug;
+      const data = await fetch(`${config.url}${slug}`);
       const json = await data.json();
       const pageData = mapData(json);
       if (!pageData[0]) {
@@ -36,6 +38,12 @@ const Home = () => {
   useEffect(() => {
     loadData();
   }, [loadData]);
+
+  useEffect(() => {
+    if (data.title) {
+      document.title = data.title;
+    }
+  }, [data]);
 
   if (data && !data.slug) {
     return <Loading />;
